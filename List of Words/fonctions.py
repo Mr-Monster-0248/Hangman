@@ -59,3 +59,19 @@ def replace(listOfWords, w_1, w_2):
         print("{word} isn't in the list".format(word = w_1))
     else:
         listOfWords[listOfWords.index(w_1)] = w_2
+
+#Reads a word from the user and display the number of occurrences and their positions
+def occurrences(listOfWords, toFind):
+
+    """Reads a word from the user and display the number of occurrences and their positions"""
+
+    occu = 0
+    index = []
+    if(not(toFind in listOfWords)):
+        print("{word} isn't in the list".format(word = toFind))
+    else:
+        for i in range(len(listOfWords)):
+            if(listOfWords[i] == toFind):
+                occu += 1
+                index.append(str(i))
+        print("{word} found at index {index}".format(word = toFind, index = ", ".join(index)))

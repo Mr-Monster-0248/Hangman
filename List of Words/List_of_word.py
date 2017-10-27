@@ -8,6 +8,8 @@ listOfWords = ["Hello", "Water", "Bread", "Phone", "Computer", "Water"]
 
 replace(listOfWords, "Hello", "Bite")
 
+occurrences(listOfWords, "Water")
+
 print(listOfWords.index("Water"))
 
 print(listOfWords)
