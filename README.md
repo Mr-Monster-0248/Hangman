@@ -15,8 +15,8 @@ This project is divided in three part:
 In the ```List of word``` file you will find some usefull functions to learn how to modify and interact with strings in **Python**
 
 
-## Hangman Game
+## II. Hangman Game
 
-## Hangman Game with GUI
+## III. Hangman Game with GUI
 
-## Features
+## IV. Features
