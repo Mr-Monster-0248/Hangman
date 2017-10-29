@@ -6,3 +6,4 @@ my_file.close()
 
 print(wordList)
 numberOfWords()
+display_word_and_occurrences()
