@@ -46,3 +46,18 @@ def randWord():
     with open("test.txt", "r") as my_file:
         wordList = my_file.read().strip().split("\n")
     return random.choice(wordList)
+
+
+#From a given word w1, get a letter from the user and search it in the word.
+#If the letter exist, the program then display a word w2 of the same length as w1
+#where w2[i] = _ if w1[i] != l
+#and w2[i] = l if w1[i] == l
+
+def displayLetter(word, letter):
+    toDisp = list()
+    for i in range(len(word)):
+        if(word[i] == letter):
+            toDisp.append(letter)
+        else:
+            toDisp.append("_")
+    return "".join(toDisp)
