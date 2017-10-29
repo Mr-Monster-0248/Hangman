@@ -5,4 +5,4 @@ wordList = my_file.read().split("\n")
 my_file.close()
 
 print(wordList)
-numberOfWords(wordList)
+numberOfWords()
