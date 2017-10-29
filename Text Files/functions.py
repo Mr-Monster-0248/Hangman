@@ -1,3 +1,5 @@
+import random
+
 #Display the number of words and the number of characters in a file
 def numberOfWords():
     """Display the number of words and the number of characters in a file"""
@@ -31,9 +33,16 @@ def display_word_and_occurrences():
     for word in wordList:
         print("{word} : {occu}".format(word = word, occu = occurences(wordList, word)))
 
-#convert the letters of the file to all uppercase
+#Convert the letters of the file to all uppercase
 def uppercase():
+    """Convert the letters of the file to all uppercase"""
     with open("test.txt", "r") as my_file:
         wordList = my_file.read().strip()
     with open("test2.txt", "w") as my_file:
         my_file.write(wordList.upper())
+
+#Randomly chose a word from the file
+def randWord():
+    with open("test.txt", "r") as my_file:
+        wordList = my_file.read().strip().split("\n")
+    return random.choice(wordList)
