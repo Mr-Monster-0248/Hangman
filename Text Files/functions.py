@@ -17,7 +17,6 @@ def occurences(my_list, toFind):
             occu += 1
     return occu
 
-
 #Display all the words in the alphabetical order,
 #each followed by its number of occurences in the file
 def display_word_and_occurrences():
@@ -31,3 +30,10 @@ def display_word_and_occurrences():
     wordList.sort()
     for word in wordList:
         print("{word} : {occu}".format(word = word, occu = occurences(wordList, word)))
+
+#convert the letters of the file to all uppercase
+def uppercase():
+    with open("test.txt", "r") as my_file:
+        wordList = my_file.read().strip()
+    with open("test2.txt", "w") as my_file:
+        my_file.write(wordList.upper())
