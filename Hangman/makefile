@@ -1,6 +1,5 @@
 version = python3.5
-target = Text_files.py
-file = test.txt
+target = hangman.py
 
 #To run List_of_word.py cleanly
 clean: run
