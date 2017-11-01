@@ -1,9 +1,9 @@
 #Function to input safely only one char
 #It also check if input is a char and not a number
 def input_char(text):
-    #Need to add the conditon for the number recognition
-    char = str(input(text))
-    char = char[0]
+    while(char in ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]):
+        char = str(input(text))
+        char = char[0]
     return char
 
 def input_word(text):

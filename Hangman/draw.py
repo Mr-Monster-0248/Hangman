@@ -1,14 +1,3 @@
-def fig6:
-    print("   ------")
-    print("   |    |")
-    print("  ( )   |")
-    print(" / | \  |")
-    print("/  |  \ |")
-    print("  / \   |")
-    print(" /   \  |")
-    print("        |")
-    print(" _______|___")
-
 #First sketch no error
 def fig1:
     print("   ------")
@@ -68,3 +57,43 @@ def fig5:
     print("        |")
     print("        |")
     print(" _______|___")
+
+#Sketch 6 5 errors
+def fig6:
+    print("   ------")
+    print("   |    |")
+    print("  ( )   |")
+    print(" / | \  |")
+    print("/  |  \ |")
+    print("  /     |")
+    print(" /      |")
+    print("        |")
+    print(" _______|___")
+
+#Sketch 7 6 errors end of game
+def fig7:
+    print("   ------")
+    print("   |    |")
+    print("  ( )   |")
+    print(" / | \  |")
+    print("/  |  \ |")
+    print("  / \   |")
+    print(" /   \  |")
+    print("        |")
+    print(" _______|___")
+
+def disp_hang(errors):
+    if(errors == 0):
+        fig1()
+    elif(errors == 1):
+        fig2()
+    elif(errors == 3):
+        fig3()
+    elif(errors == 3):
+        fig4()
+    elif(errors == 4):
+        fig5()
+    elif(errors == 5):
+        fig6()
+    elif(errors == 6):
+        fig7()
