@@ -11,10 +11,9 @@ def choose_word_player():
     return security.input_word("Enter your word: ")
 
 def initialize_player_w(secret_w, gessed):
-    toDisp = "_" * len(secret_w)
-    print(toDisp)
+    toDisp = ["_"] * len(secret_w)
     for letter in gessed:
         for i in range(len(secret_w)):
             if(secret_w[i] == letter):
                 toDisp[i] = letter
-    return toDisp
+    return " ".join(toDisp)
