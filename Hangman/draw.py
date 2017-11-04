@@ -87,7 +87,7 @@ def disp_hang(errors):
         fig1()
     elif(errors == 1):
         fig2()
-    elif(errors == 3):
+    elif(errors == 2):
         fig3()
     elif(errors == 3):
         fig4()

@@ -17,3 +17,10 @@ def initialize_player_w(secret_w, gessed):
             if(secret_w[i] == letter):
                 toDisp[i] = letter
     return " ".join(toDisp)
+
+def word_diff(secret_w, player_w):
+    player_w = "".join(player_w.split(" "))
+    if(player_w == secret_w):
+        return False
+    else:
+        return True
