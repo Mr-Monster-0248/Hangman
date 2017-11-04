@@ -19,8 +19,15 @@ def initialize_player_w(secret_w, gessed):
     return " ".join(toDisp)
 
 def word_diff(secret_w, player_w):
-    player_w = "".join(player_w.split(" "))
+    player_w = player_w.replace(" ", "")
     if(player_w == secret_w):
         return False
     else:
         return True
+
+def play_again():
+    choice = input("Your choice: ")
+    if(choice == "y" or choice == "yes"):
+        return True
+    else:
+        return False
