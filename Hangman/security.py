@@ -8,8 +8,19 @@ def input_char(text):
     return char.upper()
 
 def input_word(text):
-    print("Only your first word will be consider")
-    word = str(input(text)).strip().split(" ")
+
+    valid = False
+    while(not valid):
+        print("Only your first word will be consider")
+        word = str(input(text)).strip().split(" ")
+
+        for char in word[0]:
+            if(not char.isalpha()):
+                valid = False
+                break
+            else:
+                valid = True
+                
     return word[0].upper()
 
 def input_choice():
