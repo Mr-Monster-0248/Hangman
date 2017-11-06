@@ -2,6 +2,8 @@
 
 Wellcome to the github of the Project 1 in Python
 
+&#x1F535; **THIS PROJECT IS ONLY COMPATIBLE WITH UNIX BASED OS** &#x1F535;
+
 The goal of this project is to design and implement the **Hangman** game</br>
 This project is divided in three part:
   * Play with strings
@@ -22,6 +24,7 @@ In the `Text File` file you will find some usefull function to manipulate file i
  * One player mode
  * Two players mode
  * Safe inputs
+ * Not case sensitive
 
 ## III. Hangman Game with GUI
 
