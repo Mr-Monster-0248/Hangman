@@ -1,7 +1,6 @@
 import security
 import game
 import draw
-from os import system
 
 play = True
 while(play):
@@ -13,7 +12,7 @@ while(play):
     player_w = ""
     gessed = [" "]
 
-    system("clear")
+    security.clear()
     print("#####################")
     print("#      HANGMAN      #")
     print("#####################")
@@ -29,7 +28,7 @@ while(play):
     elif(game_mode == 2):
         secret_w = game.choose_word_player()
 
-    system("clear")
+    security.clear()
 
     while(game.word_diff(secret_w, player_w) and errors < 6):
         print("Letter you have gessed: ")
@@ -47,7 +46,7 @@ while(play):
         if(not(gess in secret_w)):
             errors += 1
         player_w = game.initialize_player_w(secret_w, gessed)
-        system("clear")
+        security.clear()
 
     if(not game.word_diff(secret_w, player_w)):
         print(player_w)

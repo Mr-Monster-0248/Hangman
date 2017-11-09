@@ -1,5 +1,9 @@
 #Function to input safely only one char
 #It also check if input is a char and not a number
+
+from sys import platform
+from os import system
+
 def input_char(text):
     char = "1"
     while(not char.isalpha()):
@@ -20,7 +24,7 @@ def input_word(text):
                 break
             else:
                 valid = True
-                
+
     return word[0].upper()
 
 def input_choice():
@@ -29,3 +33,9 @@ def input_choice():
     except(TypeError, ValueError):
         return 0
     return choice
+
+def clear():
+    if(platform == "win32"):
+        system("cls")
+    else:
+        system("clear")

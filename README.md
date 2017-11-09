@@ -2,8 +2,6 @@
 
 Wellcome to the github of the Project 1 in Python
 
-&#x1F535; **THIS PROJECT IS ONLY COMPATIBLE WITH UNIX BASED OS** &#x1F535;
-
 The goal of this project is to design and implement the **Hangman** game</br>
 This project is divided in three part:
   * Play with strings
