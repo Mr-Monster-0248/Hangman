@@ -11,6 +11,7 @@ while(play):
     secret_w = ""
     player_w = ""
     gessed = [" "]
+    gender = -1
 
     security.clear()
     print("#####################")
@@ -22,6 +23,12 @@ while(play):
         print("1 for 1 player")
         print("2 for 2 player")
         game_mode = security.input_choice()
+
+    while(gender != 1 and gender != 2):
+        print("\nChoose how you want to be portray")
+        print("1 for man")
+        print("2 for woman")
+        gender = security.input_choice()
 
     if(game_mode == 1): #One player mode
         secret_w = game.choose_word_ia()
@@ -35,7 +42,10 @@ while(play):
         print(" ".join(gessed))
         print("You have the right to make up to {} errors\n".format(6 - errors))
 
-        draw.disp_hang(errors)
+        if(gender == 1):
+            draw.disp_hang(errors)
+        else:
+            draw.disp_hang_w(errors)
         player_w = game.initialize_player_w(secret_w, gessed)
         print(player_w)
 
@@ -54,6 +64,9 @@ while(play):
         play = game.play_again()
     else:
         print("The word was {}".format(secret_w))
-        draw.disp_hang(errors)
+        if(gender == 1):
+            draw.disp_hang(errors)
+        else:
+            draw.disp_hang_w(errors)
         print("Sorry... want to try again ? (y/n)")
         play = game.play_again()
