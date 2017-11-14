@@ -115,19 +115,6 @@ def fig6():
     print("        |")
     print(" _______|___")
 
-#Sketch 7 6 errors end of game
-def fig7():
-    print("   ------")
-    print("   |    |")
-    print("  ( )   |")
-    print(" / | \  |")
-    print("/  |  \ |")
-    print("  / \   |")
-    print(" /   \  |")
-    print("        |")
-    print(" _______|___")
-
-#Sketch 6 5 errors
 def fig6_w():
     print("   ------")
     print("   |    |")
@@ -140,6 +127,17 @@ def fig6_w():
     print(" _______|___")
 
 #Sketch 7 6 errors end of game
+def fig7():
+    print("   ------")
+    print("   |    |")
+    print("  ( )   |")
+    print(" / | \  |")
+    print("/  |  \ |")
+    print("  / \   |")
+    print(" /   \  |")
+    print("        |")
+    print(" _______|___")
+
 def fig7_w():
     print("   ------")
     print("   |    |")

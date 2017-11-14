@@ -26,8 +26,8 @@ while(play):
 
     while(gender != 1 and gender != 2):
         print("\nChoose how you want to be portray")
-        print("1 for man")
-        print("2 for woman")
+        print("1 as a man")
+        print("2 as a woman")
         gender = security.input_choice()
 
     if(game_mode == 1): #One player mode
