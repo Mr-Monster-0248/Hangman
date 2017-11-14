@@ -6,16 +6,17 @@ my_window.title("Hangman")
 
 #Adding the bg
 picture = PhotoImage(file = "./img/sky_bg.png")
-Cane = Canvas(my_window, width = picture.width(), height = picture.height())
-Cane.create_image(0, 0, anchor=NW, image = picture)
-Cane.pack()
+principal_canevas = Canvas(my_window, width = picture.width(), height = picture.height())
+principal_canevas.create_image(0, 0, anchor=NW, image = picture)
 
-#Create the word zone
-word_zone = Frame(my_window, width = picture.width(), height = 30, relief = FLAT, bg = "white")
-word_zone.pack()
+#text
+word = input(">>> ")
+player_w = principal_canevas.create_text(640/2, 400, anchor=CENTER, text = word, font = ("DejaVu", 40), width = 640, justify = CENTER)
+principal_canevas.pack()
 
-#Print word
-word = Label(word_zone, text = "TEST", font = ("Helvetica", 30))
-word.pack()
+bite = input("test: ")
+principal_canevas.delete(player_w)
+player_w = principal_canevas.create_text(640/2, 400, anchor=CENTER, text = bite, font = ("DejaVu", 40), width = 640, justify = CENTER)
+principal_canevas.pack()
 
 my_window.mainloop()
