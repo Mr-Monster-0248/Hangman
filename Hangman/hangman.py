@@ -21,7 +21,7 @@ while(play):
     while(game_mode != 1 and game_mode != 2):
         print("\nChoose your game mode")
         print("1 for 1 player")
-        print("2 for 2 player")
+        print("2 for 2 players")
         game_mode = security.input_choice()
 
     while(gender != 1 and gender != 2):

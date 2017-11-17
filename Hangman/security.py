@@ -1,6 +1,8 @@
 #Function to input safely only one char
 #It also check if input is a char and not a number
 
+#hanene.ochi@gmail.com
+
 from sys import platform
 from os import system
 
