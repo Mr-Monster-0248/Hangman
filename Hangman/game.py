@@ -5,7 +5,7 @@ import security
 def choose_word_ia():
     with open("word_list.txt", "r") as word_list:
         words = word_list.read().strip().split("\n")
-    return random.choice(words)
+    return random.choice(words).upper()
 
 def choose_word_player():
     return security.input_word("Enter your word: ")
